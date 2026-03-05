@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+    background-color: #fffcfc;
+    color: #524040;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.main {
+    width: 100%;
+    padding: 0 6%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid #f0f0f0;
+
+    position: sticky;
+
+    top: 0;
+    background: white;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+    color: #000;
+}
+
+.logo span {
+    color: #0876ec;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #666;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s all ease;
+    padding: 10px 0;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #007bff;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #000;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+
+}
+
+.middle-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0;
+    flex-wrap: wrap;
+    gap: 40px;
+    flex: 1;
+}
+
+.personal-info {
+    flex: 1.5;
+}
+
+.personal-info h1 {
+    font-size: 5.5rem;
+    font-weight: 900;
+    line-height: 0.95;
+    letter-spacing: -3px;
+    margin-bottom: 25px;
+}
+
+.highlight {
+    color: #007bff;
+}
+
+.personal-info p {
+    font-size: 1.4rem;
+    color: #444;
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+.profile-pic img {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.1);
+    border: 20px solid #fff;
+}
+
+.content {
+    padding: 100px 0;
+    width: 100%;
+
+}
+
+.edu-box {
+    margin-bottom: 17px;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 60px;
+    letter-spacing: -1px;
+}
+
+.skill-grid,
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.skill-card,
+.work-item {
+    background: #f8f9fa;
+    padding: 60px;
+    border-radius: 30px;
+    transition: 0.4s ease;
+}
+
+.skill-card:hover,
+.work-item:hover {
+    background: #000;
+    color: #fff;
+    transform: translateY(-20px);
+}
+
+.skill-card h3,
+.work-item h3 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.contact-wrapper {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.simple-form {
+    flex: 1.5;
+}
+
+.form-row {
+    margin-bottom: 30px;
+}
+
+.form-row input,
+.form-row textarea {
+    width: 100%;
+    padding: 25px 0;
+    font-size: 1.3rem;
+    border: none;
+    border-bottom: 2px solid #eee;
+    background: transparent;
+    outline: none;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+    border-bottom-color: #007bff;
+}
+
+.contact-details {
+    flex: 1;
+    background: #f8f9fa;
+    padding: 60px;
+    border-radius: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.submit-btn {
+    background: #007bff;
+    color: #fff;
+    padding: 22px 50px;
+    border-radius: 60px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.view-link {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    transition: 0.3s;
+}
+
+.view-link:hover {
+    color: #007bff;
+    border-bottom-color: transparent;
+}
+
+.media {
+    padding: 20px 45px;
+    border: 2px solid #eee;
+    border-radius: 60px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+}
+
+.media:hover {
+    border-color: #007bff;
+    background: #f0f7ff;
+}
+
+.bottom-section {
+    padding: 80px 0;
+    border-top: 1px solid #eee;
+}
+
+@media (max-width: 1024px) {
+    .personal-info h1 {
+        font-size: 4rem;
+    }
+
+    .profile-pic img {
+        width: 350px;
+        height: 350px;
+    }
+}
