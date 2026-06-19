@@ -6,39 +6,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills | Satya Phanindra</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .content {
+            justify-content: flex-start !important;
+            padding-top: 60px !important;
+        }
+
+        .skill-group-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        .skill-group-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0, 140, 255, 0.15);
+            border-color: var(--accent-color, #008cff);
+        }
+
+        .badge {
+            transition: all 0.25s ease;
+            cursor: default;
+            display: inline-block;
+        }
+
+        .badge:hover {
+            background-color: var(--accent-color, #008cff) !important;
+            color: #fff !important;
+            transform: scale(1.1);
+            box-shadow: 0 4px 10px rgba(0, 140, 255, 0.3);
+        }
+    </style>
 </head>
 
 <body>
     <div class="main">
         <div class="top-section">
-            <div class="logo">Personal<span class="highlight"> Portfolio</span></div>
-            <ul class="nav-links">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="skill.html">Skills</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="logo">Personal<span> Portfolio</span></div>
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="skill.html">Skills</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <label class="theme-switch">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider"></div>
+                </label>
+            </div>
         </div>
 
         <div class="content">
-            <h2 class="title">Technical Expertise</h2>
-            <div class="skill-grid">
-                <div class="skill-card">
-                    <h3>Frontend</h3>
-                    <p>HTML5, CSS3, JavaScript, React. Building modern, high-performance user interfaces.</p>
+            <div class="title-header">
+                <h2>Technical Skillset</h2>
+                <p>A comprehensive view of my engineering competencies, software languages, and structural domain
+                    knowledge.</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="skill-group-card">
+                    <h3>Languages</h3>
+                    <p>Core programming foundations and modern web scripting syntaxes.</p>
+                    <div class="badge-container">
+                        <span class="badge">Java</span>
+                        <span class="badge">Python (Basic)</span>
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">HTML5</span>
+                        <span class="badge">CSS3</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <h3>Backend</h3>
-                    <p>Node.js, SQL Databases, MongoDB. Managing data and server-side logic efficiently.</p>
+
+                <div class="skill-group-card">
+                    <h3>Frameworks & Web</h3>
+                    <p>Component-driven frontends and enterprise server runtime architectures.</p>
+                    <div class="badge-container">
+                        <span class="badge">React.js</span>
+                        <span class="badge">Node.js</span>
+                        <span class="badge">Express.js</span>
+                        <span class="badge">Spring Boot (Basic)</span>
+                        <span class="badge">Hibernate</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <h3>AI & Tools</h3>
-                    <p>Python, CNN Classification, Git, VS Code. Specialized in Deep Learning projects.</p>
+
+                <div class="skill-group-card">
+                    <h3>Database & Cloud</h3>
+                    <p>Relational, document-oriented storage engines and hosting infrastructures.</p>
+                    <div class="badge-container">
+                        <span class="badge">SQL</span>
+                        <span class="badge">MongoDB</span>
+                        <span class="badge">MongoDB Atlas</span>
+                        <span class="badge">H2 Database</span>
+                        <span class="badge">AWS</span>
+                    </div>
+                </div>
+
+                <div class="skill-group-card">
+                    <h3>Tools, OS & Concepts</h3>
+                    <p>Development workflows, environment management, and platform ecosystems.</p>
+                    <div class="badge-container">
+                        <span class="badge">Linux/Unix (OS)</span>
+                        <span class="badge">DBMS</span>
+                        <span class="badge">GitHub</span>
+                        <span class="badge">VS Code</span>
+                        <span class="badge">Postman</span>
+                        <span class="badge">Render</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <script src="script.js"></script>
 </body>
 
 </html>

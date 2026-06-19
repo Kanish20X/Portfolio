@@ -1,66 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Portfolio</title>
+    <title>Portfolio | M K Satya Phanindra</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <div class="main">
-        <div class="top-section">
-            <div class="logo">Personal<span class="highlight"> Portfolio</span></div>
-            <ul class="nav-links">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="skill.html">Skills</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+        <header class="top-section">
+            <div class="logo">Personal<span> Portfolio</span></div>
+            <div class="nav-container">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="skill.html">Skills</a></li>
+                        <li><a href="project.html">Projects</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </header>
 
-        <div class="middle-section">
+        <section class="middle-section">
             <div class="personal-info">
-                <h1>Hi, I am <span class="highlight">M K Satya Phanindra</span></h1>
-                <p class="sub-text">Software Engineer | Web Developer | AI Enthusiast</p>
-                <p>I am a B.Tech student at Malla Reddy Engineering College. I am passionate about learning new
-                    technologies and solving real-world problems through code.</p>
-
+                <h1>Hi, I am <span>M K Satya Phanindra</span></h1>
+                <p class="sub-text">Computer Science Engineering Student | Full-Stack Java Developer</p>
+                <p>I am a student at Malla Reddy Engineering College specializing in Java, React.js, Spring Boot, and
+                    Node.js. I focus on engineering clean, end-to-end web applications, secure file architectures, and
+                    production-tested REST APIs.</p>
                 <div class="cta-buttons">
-                    <a href="project.html" class="submit-btn"
-                        style="text-decoration:none; display:inline-block; margin-top: 20px;">View My Work</a>
-                    <a href="contact.html" class="media"
-                        style="text-decoration:none; display:inline-block; margin-top: 20px;">Hire Me</a>
+                    <a href="project.html" class="media submit-btn">View My Work</a>
+                    <a href="contact.html" class="media">Get In Touch</a>
                 </div>
             </div>
             <div class="profile-pic">
-                <img src="./WhatsApp_Image_2026-03-02_at_21.20.33.jpeg" alt="Satya Phanindra">
+                <img src="./ipic.png" alt="Satya Phanindra">
             </div>
-        </div>
+        </section>
 
-        <div class="content">
-            <h2 class="title">What I Do</h2>
-            <div class="skill-grid">
-                <div class="skill-card">
-                    <h3>Web Development</h3>
-                    <p>Building clean, responsive websites using HTML, CSS, and modern frameworks.</p>
+        <main class="content">
+            <div class="title-header">
+                <h2>Core Architectural Focus</h2>
+            </div>
+            <div class="portfolio-grid">
+                <div class="project-card">
+                    <h3>Web Application Design</h3>
+                    <p>Engineering modern client layouts and interactive dashboards using modular components in React.js
+                        and Node.js services.</p>
                 </div>
-                <div class="skill-card">
-                    <h3>Machine Learning</h3>
-                    <p>Working on CNN classification and medical AI projects like NeuroGuard.</p>
+                <div class="project-card">
+                    <h3>Backend Infrastructure</h3>
+                    <p>Constructing multi-tier application endpoints, structured data-mapping models, and relational
+                        logic powered by Java and Spring Boot ecosystems.</p>
                 </div>
             </div>
-        </div>
+        </main>
 
-        <div class="bottom-section">
-            <a href="https://www.linkedin.com/in/m-k-satya-phanindra-839710374/" class="media">LinkedIn</a>
-            <a href="https://github.com/Kanish20X" class="media">GitHub</a>
-        </div>
+        <footer class="bottom-section">
+            <p class="footer-text">© 2026 Medicharla K Satya Phanindra. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/m-k-satya-phanindra-839710374/" target="_blank"
+                    class="media">LinkedIn</a>
+                <a href="https://github.com/Kanish20X" target="_blank" class="media">GitHub</a>
+            </div>
+        </footer>
     </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -4,47 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact </title>
+    <title>Contact | M K Satya Phanindra</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
     <div class="main">
         <div class="top-section">
-            <div class="logo">Personal<span class="highlight"> Portfolio</span></div>
-            <ul class="nav-links">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="skill.html">Skills</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="logo">Personal<span> Portfolio</span></div>
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="skill.html">Skills</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <label class="theme-switch">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider"></div>
+                </label>
+            </div>
         </div>
 
+
         <div class="content">
-            <h2 class="title">Get In Touch</h2>
-            <div class="contact-wrapper">
-                <form class="simple-form">
-                    <div class="form-row"><input type="text" placeholder="Your Name"></div>
-                    <div class="form-row"><input type="email" placeholder="Your Email"></div>
-                    <div class="form-row"><textarea rows="4" placeholder="Your Message"></textarea></div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
+            <div class="title-header">
+                <h2>Get In Touch</h2>
+                <p>Have an interesting project, internship opportunity, or want to discuss full-stack applications? Drop
+                    a message!</p>
+            </div>
 
-                <div class="contact-details">
-                    <h3>Contact Info</h3>
-                    <p><strong>Email:</strong><br>mkanish2004@gmail.com</p><br>
-
-                    <p><strong>Location:</strong><br>Hyderabad, India</p>
-                    <div class="cta-buttons" style="margin-top:30px;">
-                        <a href="https://www.linkedin.com/in/m-k-satya-phanindra-839710374/" class="media">LinkedIn</a>
-                        <a href="https://github.com/Kanish20X" class="media">GitHub</a>
+            <div class="contact-grid">
+                <div class="info-sidebar">
+                    <h3>Contact Details</h3>
+                    <div class="info-details">
+                        <label>Location</label>
+                        <p>Hyderabad, Telangana, India</p>
                     </div>
+                    <div class="info-details">
+                        <label>Professional Network</label>
+                        <p><a href="https://www.linkedin.com/in/m-k-satya-phanindra-839710374/"
+                                style="color: var(--accent-color);">Connect on LinkedIn</a></p>
+                    </div>
+                    <div class="info-details">
+                        <label>Open Source Codebases</label>
+                        <p><a href="https://github.com/Kanish20X" style="color: var(--accent-color);">Review GitHub
+                                Profile</a></p>
+                    </div>
+                </div>
+
+                <div class="form-wrapper">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-input" placeholder="Enter your full name" required
+                                autocomplete="name">
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-input" placeholder="name@example.com" required
+                                autocomplete="email">
+                        </div>
+                        <div class="form-row">
+                            <label for="message">Message Context</label>
+                            <textarea id="message" class="form-input" rows="6" placeholder="Write your message here..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="media submit-btn" style="width: 100%;">Send Message</button>
+                    </form>
                 </div>
             </div>
         </div>
-    </div>
 
+        <div class="bottom-section">
+            <p class="footer-text">© 2026 Medicharla K Satya Phanindra. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/m-k-satya-phanindra-839710374/" class="media">LinkedIn</a>
+                <a href="https://github.com/Kanish20X" class="media">GitHub</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
